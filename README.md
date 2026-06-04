@@ -1,15 +1,19 @@
 # 🤖 Nova AI Chatbot
 
-Nova AI is an AI-powered chatbot developed using Python Flask, HTML, CSS, JavaScript, and Groq LLM.
+Nova AI is an AI-powered chatbot developed using Flask, HTML, CSS, JavaScript, and Groq LLM. It provides intelligent conversational responses with a modern and interactive user interface.
 
 ## 🚀 Features
 
-* AI-powered chatbot using Groq Llama Model
-* Modern and responsive user interface
-* Voice Input (Speech-to-Text)
-* Real-time AI responses
-* Text-based conversation system
-* Fast and interactive chat experience
+* AI-powered chatbot using Groq LLM
+* Voice Input (Speech Recognition)
+* Chat History Storage (Local Storage)
+* New Chat
+* Clear Chat
+* Dark / Light Mode
+* Download Chat as TXT File
+* File Attachment Support (UI)
+* Typing Animation
+* Responsive and Modern UI
 
 ## 🛠️ Technologies Used
 
@@ -23,15 +27,16 @@ Nova AI is an AI-powered chatbot developed using Python Flask, HTML, CSS, JavaSc
 
 * Python
 * Flask
+* Flask-CORS
 
-### AI Integration
+### AI Model
 
 * Groq API
-* Llama 3.3 70B Versatile Model
+* Llama 3.3 70B Versatile
 
 ## 📂 Project Structure
 
-Nova-AI/
+NovaAI/
 
 ├── app.py
 
@@ -53,40 +58,45 @@ Nova-AI/
 
 1. Clone the repository
 
-```bash
 git clone https://github.com/Lipika-Pati/Nova-AI.git
-```
 
-2. Install dependencies
+2. Move to project folder
 
-```bash
-pip install -r requirements.txt
-```
+cd Nova-AI
 
-3. Add your Groq API key in environment variables.
+3. Install dependencies
 
-4. Run the application
+pip install flask flask-cors groq python-dotenv
 
-```bash
+4. Create a .env file
+
+GROQ_API_KEY=your_api_key_here
+
+5. Run the application
+
 python app.py
-```
 
-## 🎯 Future Enhancements
+6. Open browser
 
-* Chat History
-* Resume Analyzer
-* Interview Preparation Module
-* Multiple AI Model Support
-* Dark/Light Mode
-* Chat Export Feature
+http://127.0.0.1:5000
+
+## 🔒 Security
+
+API keys are stored in environment variables and are not uploaded to GitHub.
 
 ## 👩‍💻 Developer
 
 Lipika Pati
 
+Final Year B.Tech Student
 
-## 📌 Project Type
+Passionate about AI, Full Stack Development, and Software Engineering.
 
-Academic Project / AI Chatbot Project
+## 📌 Future Enhancements
 
-Developed for learning Artificial Intelligence integration with web applications.
+* Resume Analyzer
+* Interview Preparation Mode
+* Real-Time Web Search
+* PDF Analysis
+* Image Understanding
+* User Authentication
