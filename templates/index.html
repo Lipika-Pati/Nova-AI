@@ -1,13 +1,8 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-
     <title>Nova AI</title>
-
-    <link rel="stylesheet"
-    href="{{ url_for('static', filename='style.css') }}">
-
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 
 <body>
@@ -15,55 +10,42 @@
 <div class="container">
 
     <!-- SIDEBAR -->
-
     <div class="sidebar">
 
-        <div class="logo">
-            NOVA AI
-        </div>
+        <div class="logo">NOVA AI</div>
+        <div class="tagline">Your Intelligent AI Assistant 🚀</div>
 
-        <div class="tagline">
-            Your Intelligent AI Assistant 🚀
-        </div>
+        
 
-        <div class="sidebar-box">
-            👋 Welcome Lipika
-        </div>
+        <!-- NEW BUTTONS -->
+          <button onclick="clearChat()">🗑 Clear Chat</button>
+<button onclick="newChat()">➕ New Chat</button>
+<button onclick="toggleTheme()">🌙 Dark / Light</button>
+<button onclick="downloadChat()">📄 Download Chat</button>
 
-        <div class="sidebar-box">
-            🤖 AI Powered Chatbot
-        </div>
-
-        <div class="sidebar-box">
-            ⚡ Fast Responses
-        </div>
 
     </div>
 
-    <!-- CHAT SECTION -->
-
+    <!-- CHAT -->
     <div class="chat-section">
 
-        <div class="topbar">
-            Nova AI Assistant
-        </div>
+        <div class="topbar">Nova AI Assistant</div>
 
         <div id="chat-box"></div>
 
         <div class="input-area">
 
-            <input type="text"
-            id="user-input"
-            placeholder="Ask anything...">
+    <label for="file-upload" class="upload-btn">📎 Upload</label>
 
-            <button onclick="startListening()" id="mic-btn">
-                🎤
-            </button>
+    <input type="file" id="file-upload" accept=".pdf,.txt,image/*" hidden>
 
-            <button onclick="sendMessage()">
-                Send
-            </button>
+    <input type="text" id="user-input" placeholder="Ask anything...">
 
+    <button onclick="startListening()">🎤</button>
+
+    <button onclick="sendMessage()">Send</button>
+
+</div>
         </div>
 
     </div>
