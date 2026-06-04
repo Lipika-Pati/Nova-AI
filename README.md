@@ -88,8 +88,6 @@ API keys are stored in environment variables and are not uploaded to GitHub.
 
 Lipika Pati
 
-Final Year B.Tech Student
-
 Passionate about AI, Full Stack Development, and Software Engineering.
 
 ## 📌 Future Enhancements
