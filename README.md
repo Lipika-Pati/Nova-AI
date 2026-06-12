@@ -1,19 +1,28 @@
 # 🤖 Nova AI Chatbot
 
-Nova AI is an AI-powered chatbot developed using Flask, HTML, CSS, JavaScript, and Groq LLM. It provides intelligent conversational responses with a modern and interactive user interface.
+Nova AI is an AI-powered chatbot developed using Flask, Spring Boot, HTML, CSS, JavaScript, and Groq LLM. It provides intelligent conversational responses through a modern, responsive, and interactive user interface.
+
+The project combines a Python-based AI chatbot service with a Java Spring Boot backend, making it scalable and suitable for future enhancements such as authentication, database integration, and advanced AI features.
+
+---
 
 ## 🚀 Features
 
-* AI-powered chatbot using Groq LLM
+* AI-Powered Chatbot using Groq LLM
+* Intelligent Conversational Responses
 * Voice Input (Speech Recognition)
 * Chat History Storage (Local Storage)
-* New Chat
-* Clear Chat
+* New Chat Functionality
+* Clear Chat Option
 * Dark / Light Mode
 * Download Chat as TXT File
 * File Attachment Support (UI)
 * Typing Animation
-* Responsive and Modern UI
+* Responsive and Modern User Interface
+* REST API Integration
+* Spring Boot Backend Support
+
+---
 
 ## 🛠️ Technologies Used
 
@@ -23,72 +32,115 @@ Nova AI is an AI-powered chatbot developed using Flask, HTML, CSS, JavaScript, a
 * CSS3
 * JavaScript
 
-### Backend
+### AI Service
 
 * Python
 * Flask
 * Flask-CORS
-
-### AI Model
-
 * Groq API
 * Llama 3.3 70B Versatile
 
+### Backend
+
+* Java
+* Spring Boot
+* Spring Web
+* Maven
+* REST APIs
+
+---
+
 ## 📂 Project Structure
 
-NovaAI/
+```text
+Nova-AI/
 
-├── app.py
-
-├── .gitignore
-
-├── templates/
-
-│ └── index.html
-
+├── backend/
+│   └── src/
+│
 ├── static/
-
-│ ├── style.css
-
-│ └── script.js
-
+│   ├── style.css
+│   └── script.js
+│
+├── templates/
+│   └── index.html
+│
+├── app.py
+├── requirements.txt
+├── .gitignore
 └── README.md
+```
+
+---
 
 ## ⚙️ Installation
 
-1. Clone the repository
+### 1. Clone Repository
 
+```bash
 git clone https://github.com/Lipika-Pati/Nova-AI.git
 
-2. Move to project folder
-
 cd Nova-AI
+```
 
-3. Install dependencies
+### 2. Install Python Dependencies
 
-pip install flask flask-cors groq python-dotenv
+```bash
+pip install -r requirements.txt
+```
 
-4. Create a .env file
+### 3. Create Environment File
 
+Create a `.env` file:
+
+```env
 GROQ_API_KEY=your_api_key_here
+```
 
-5. Run the application
+### 4. Run Flask Application
 
+```bash
 python app.py
+```
 
-6. Open browser
+Application URL:
 
+```text
 http://127.0.0.1:5000
+```
+
+### 5. Run Spring Boot Backend
+
+```bash
+cd backend
+
+mvn clean install
+
+mvn spring-boot:run
+```
+
+Backend URL:
+
+```text
+http://localhost:8080
+```
+
+---
 
 ## 🔒 Security
 
-API keys are stored in environment variables and are not uploaded to GitHub.
+* API keys are stored securely using environment variables.
+* Sensitive credentials are excluded from GitHub.
+* No API keys are hardcoded in the repository.
+
+---
 
 ## 👩‍💻 Developer
 
-Lipika Pati
+### Lipika Pati
 
-Passionate about AI, Full Stack Development, and Software Engineering.
+
+---
 
 ## 📌 Future Enhancements
 
@@ -98,3 +150,24 @@ Passionate about AI, Full Stack Development, and Software Engineering.
 * PDF Analysis
 * Image Understanding
 * User Authentication
+* Database Integration
+* Multi-Language Support
+* User Profile Management
+
+---
+
+## ⭐ Contribution
+
+Contributions, suggestions, and improvements are welcome.
+
+1. Fork the repository
+2. Create a new branch
+3. Commit your changes
+4. Push to GitHub
+5. Create a Pull Request
+
+---
+
+## 📄 License
+
+This project is developed for educational, learning, and portfolio purposes.
