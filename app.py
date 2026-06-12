@@ -8,14 +8,10 @@ app = Flask(__name__)
 CORS(app)
 
 # Groq API Key
-from dotenv import load_dotenv
-import os
-
-load_dotenv()
-
 client = Groq(
-    api_key=os.getenv("GROQ_API_KEY")
+    client = Groq(api_key="gsk_xxxxx")
 )
+
 
 
 
